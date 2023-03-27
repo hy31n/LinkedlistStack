@@ -100,5 +100,31 @@ public void display()
 ``` 
 node들을 print 해주는 함수를 만든다.
 
+```C#
+static void Main(string[] args)
+        {
+            StackUsingLinkedlist obj
+            = new StackUsingLinkedlist();
+
+            obj.push(11);
+            obj.push(22);
+            obj.push(33);
+            obj.push(44);
+
+            obj.display();
+
+            Console.Write("\nTop element is {0}\n", obj.peek());
+
+            obj.pop();
+            obj.pop();
+
+            obj.display();
+
+            Console.Write("\nTop element is {0}\n", obj.peek());
+            Console.ReadKey();  
+        }
+    }
+ ```
+ StackUsingLinkedlist 오브젝트를 만든다.
 # 실행 화면
 ![Stack실행화면](https://user-images.githubusercontent.com/102163109/227840752-db3f7eeb-f5de-4d30-9ee3-65ada23cba0e.PNG)
